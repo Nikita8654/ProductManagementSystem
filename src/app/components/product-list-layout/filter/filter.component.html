@@ -1,0 +1,22 @@
+<div class="card filters">
+
+  <div class="card-header">
+    <strong>Filters</strong>
+    <span><a href="#" class="pull-right" (click)="onClear()">Clear All</a> </span>
+  </div>
+
+  <div class="card-body">
+    <button class="btn btn-primary btn-block btn-sm">Filter by Category</button>
+    <mat-selection-list #category>
+      <mat-list-option *ngFor="let proCategory of productCategory">
+        {{proCategory}}
+      </mat-list-option>
+    </mat-selection-list>
+
+    <p>
+      Options selected: {{category.selectedOptions.selected.length}}
+    </p>
+  </div>
+
+
+</div>

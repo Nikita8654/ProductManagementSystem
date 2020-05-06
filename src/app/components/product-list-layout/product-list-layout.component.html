@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-md-3">
+    <app-filter></app-filter>
+  </div>
+
+  <div class="col-md-8">
+    <div class="row" *ngIf="this.usercategory?.userCategory==='PRODUCT_MASTER'">
+      <br>
+      <button type="button" class="btn btn-primary"
+              (click)="addProduct()" style="margin-top: 10%;margin-left: 3%">Add Product
+      </button>
+    </div>
+
+    <div class="row" *ngIf="this.usercategory?.userCategory==='ADMIN'">
+      <br>
+      <button type="button" class=" btn btn-primary"
+              (click)="addProductMaster() " style="margin-top: 10%;margin-left: 3%">Add ProductMaster
+      </button>
+    </div>
+    <hr>
+    <div class="row">
+      <app-product-list></app-product-list>
+    </div>
+  </div>
+

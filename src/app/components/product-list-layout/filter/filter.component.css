@@ -1,0 +1,8 @@
+.card-header{
+  margin-top:  4rem;
+}
+
+.mat-pseudo-checkbox-checked,
+ .mat-accent .mat-pseudo-checkbox-checked{
+  background: #8cce88 !important;
+}
